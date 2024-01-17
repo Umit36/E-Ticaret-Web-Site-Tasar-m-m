@@ -1,0 +1,405 @@
+/* GENERAL SETTINGS */
+
+@font-face {
+    font-family:'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+body{
+  font-family: 'lato',sans-serif;
+}
+
+.col4{
+  height: 120px;
+  background-color: rgba(0,0,0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-radius:50px;
+  float:left;
+  z-index: 1;
+}
+header {
+    max-width: 673px;
+}
+
+.main_nav {
+    margin-top: 30px;
+}
+
+.main_nav ul {
+    margin: 0;
+    padding: 0;    
+}
+
+.main_nav li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.main_nav  li  last-child {
+    margin-right: 0;
+}
+
+.main_nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 90px;
+    border:none;
+}
+
+.main_nav li a input{
+  background-color: rgba(0,0,0, 0.5);
+  color: #fff;
+  float: left;
+  cursor: pointer;
+  border: none;
+
+}
+.main_nav li a .fa{
+  margin-right: 5px;
+}
+
+.main_nav li a .fa-shopping-cart{
+  margin-right: 5px;
+  
+}
+
+.main_nav li a b:hover {
+  color: #11B7B1;
+}
+
+.main_nav li a:hover {
+    color: #11B7B1;
+} 
+
+  /* Navbar links */
+
+  
+  .main_nav a {
+    float: left;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+    
+  }
+  
+  /* Navbar links on mouse-over */
+  .nav-item a:hover {
+    background-color: #000;
+  }
+  
+  /* Current/active navbar link */
+  .navbar-brand {
+    margin-left: 20px;
+    background-image: url(../img/logo.png);
+  }
+  .active {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .ara {
+  margin-right: 100px;
+  }
+  .user {
+    margin-top: auto;
+    margin-right: 20px;
+}
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width:500px) {
+    .main_nav a {
+      float: none;
+      display: block;
+    }
+  }
+
+  /* Anasayfa */
+
+  #main_area {
+    background-image: url(../img/anasayfa.jpg);
+    background-size: cover;
+    background-position: top;
+    min-height: 620px;
+    padding-top: 225px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    color: #fed301;
+    font-weight: 100;
+    letter-spacing: 2px;
+    word-spacing: 100px;
+}
+
+h1 span {
+    color:red;
+}
+
+#main_area p {
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+.fa-arrow-down {
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+    background-color: #fed301;
+    line-height: 42px;
+    font-size: 28px;
+}
+
+#whatwedo {
+    background-color: #11B7B1;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 56px;
+    padding-bottom: 112px;
+}
+
+#whatwedo h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#whatwedo .col6 {
+    width: 50%;
+    min-height: 250px;
+    float:left;
+    background-image: url(../img/foto.jpg);
+    opacity: .70;
+    cursor: pointer;
+}
+
+#whatwedo .col6:hover {
+    opacity: 1;
+}
+
+#whatwedo h3{
+    padding-top: 60px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#whatwedo p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#whatwedo h3, #whatwedo p {
+    color: #fff;
+}
+
+/* FORM SECTION */
+
+#gallery {
+  background-color: #fff;
+}
+.galleryTop {
+  text-align: center;
+}
+
+.gallerySlider {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.gallerySliderItem {
+  width: 300%;
+  position: relative;
+  left: 0;
+  animation: slideAnimation 10s infinite;
+}
+
+.gallerySliderItem img {
+  width: 33.33%;
+  float: left;
+}
+
+@keyframes slideAnimation {
+  0% {left: 0;}
+  25% {left: -100%;}
+  50% {left: -200%;}
+  75% {left: -100%;}
+  100% {left: 0;}
+}
+
+.contactTop {
+  text-align: center;
+}
+
+.contactTop h2 {
+  display: inline-block;
+  border: none;
+  background:#11B7B1;
+  color: #fff;
+  padding: 12px 25px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contactForm {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.formItem {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.formShape {
+  color: #fff;
+  float: left;
+  background:#11B7B1;
+  padding: 8px;
+  width: 8%;
+  text-align: center;
+} 
+
+.formField {
+  color: #fff;
+  background:#11B7B1;
+  border: none;
+  padding: 15.5px;
+  width: 91.9%;
+  display: block;
+  font-size: 14px;
+}
+
+.formBtn {
+  display: block;
+  border: none;
+  background:#11B7B1;
+  color: #fff;
+  padding: 12px 25px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.formBtn:hover {
+  background:#191b1b;
+}
+
+/* FOOTER SETTINGS */
+
+footer {
+  background:#11B7B1;
+  text-align: center;
+}
+
+.footerItem {
+  padding: 20px;
+}
+
+.footerItem img {
+  height: 50px;
+  opacity: .5;
+}
+
+footer h3 {
+  color: #fff;
+  font-size: 18;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+footer .fa {
+  font-size: 30px;
+  color: #fff;
+  line-height: 50px;
+  transition: .3s ease;
+}
+
+footer .fa:hover {
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+  line-height: 20px;
+}
+
+.socialLinks li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.socialLinks li:hover {
+  background:#191b1b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
